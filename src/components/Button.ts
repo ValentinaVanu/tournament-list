@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import theme from '../theme';
 
-const Button = styled.button`
+export const Button = styled.button`
   background: transparent;
   border: 1px solid ${theme.palette.secondary.main};
   border-radius: ${theme.borderRadius};
@@ -20,4 +20,8 @@ const Button = styled.button`
   }
 `;
 
-export default Button;
+export const ButtonContainer = styled.div`
+  & button:first-child {
+    margin-right: ${theme.spacing(2)};
+  }
+`;
